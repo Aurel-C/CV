@@ -16,6 +16,7 @@ sections:
   experience: Expérience professionnelle
   projects: Projets
   interests: Centres d’intérêt
+  conferences: Écoles d’été et ateliers
   publications: Publications
   skills: Compétences
   languages: Langues
@@ -24,6 +25,9 @@ labels:
   current: aujourd'hui
   thesis: Thèse
   publication_venue: Publication
+
+hidden_sections:
+  - skills
 
 education:
   - title: Doctorant en informatique
@@ -71,6 +75,19 @@ interests:
   - Vision par ordinateur
   - Apprentissage profond
   - Apprentissage auto-supervisé
+
+conferences:
+  - title: ICVSS 2025
+    url: https://icvss.dmi.unict.it/icvss2025/
+    subtitle: "Computer Vision for Spatial Intelligence"
+    details: "Participation à l'école d'été et poster"
+  - title: PAISS 2025
+    url: https://europe.naverlabs.com/updates/paiss/
+    details: "Participation à l'école d'été"
+  - title: Naver Labs Workshop 2025
+    url: https://europe.naverlabs.com/updates/ai4roboticsworkshop/
+    subtitle: "AI for Robotics"
+    details: "Participation et poster"
 
 publications:
   - title: Towards Sharper Object Boundaries in Self-Supervised Depth Estimation

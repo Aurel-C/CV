@@ -233,6 +233,13 @@ h3 a:hover {
     font-size: 9pt;
 }
 
+.subtitle {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 3pt;
+    font-size: 9pt;
+}
+
 /* Lists */
 ul {
     list-style-type: none;

@@ -134,6 +134,36 @@
             </ul>
         </section>
 
+        <section id="conferences">
+            <h2>
+                <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                    <g transform="translate(-92.958307,-152.68222)">
+                        <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                            <g transform="translate(14.733938,75.806834)">
+                                <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                    d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                {{ sections.conferences }}
+            </h2>
+            {% for entry in conferences %}
+            <div class="entry">
+                <div class="entry-title">
+                    <h3>{% if entry.url is defined %}<a href="{{ entry.url }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}</h3>
+                    {% if entry.date is defined %}
+                    <p class="date">{{ entry.date }}</p>
+                    {% endif %}
+                </div>
+                {% if entry.subtitle is defined %}
+                <p class="subtitle">{{ entry.subtitle }}</p>
+                {% endif %}
+                <p class="details">{{ entry.details }}</p>
+            </div>
+            {% endfor %}
+        </section>
+
         <section id="publications">
             <h2>
                 <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
@@ -155,6 +185,7 @@
             {% endfor %}
         </section>
 
+        {% if 'skills' not in hidden_sections %}
         <section id="technical-skills">
             <h2>
                 <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
@@ -178,6 +209,7 @@
                 {% endfor %}
             </div>
         </section>
+        {% endif %}
 
         <section id="languages">
             <h2>

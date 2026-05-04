@@ -16,6 +16,7 @@ sections:
   experience: Work Experience
   projects: Projects
   interests: Research Interests
+  conferences: Summer Schools & Workshops
   publications: Publications
   skills: Technical Skills
   languages: Languages
@@ -25,11 +26,14 @@ labels:
   thesis: Thesis
   publication_venue: Publication
 
+hidden_sections:
+  - skills
+
 education:
   - title: Ph.D. Candidate in Computer Science
     institution: LIRIS & Visual Behavior
     date: May 2023 - Present
-    details: "Thesis: 'Monocular depth: self-supervised learning integrating scene structure'"
+    details: "Structure Aware Self-Supervised Monocular Depth Estimation"
   - title: Master's Degree in Computer Science
     institution: University of Technology of Troyes
     date: 2017 - 2022
@@ -71,6 +75,19 @@ interests:
   - Computer Vision
   - Deep Learning
   - Self-Supervised Learning
+
+conferences:
+  - title: ICVSS 2025
+    url: https://icvss.dmi.unict.it/icvss2025/
+    subtitle: "Computer Vision for Spatial Intelligence"
+    details: "Summer school attendance & poster"
+  - title: PAISS 2025
+    url: https://europe.naverlabs.com/updates/paiss/
+    details: "Summer school attendance"
+  - title: Naver Labs Workshop 2025
+    url: https://europe.naverlabs.com/updates/ai4roboticsworkshop/
+    subtitle: "AI for Robotics"
+    details: "Attendance and poster presentation"
 
 publications:
   - title: Towards Sharper Object Boundaries in Self-Supervised Depth Estimation
