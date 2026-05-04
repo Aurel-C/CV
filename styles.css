@@ -1,0 +1,273 @@
+:root {
+    --primary-color: #0047ab;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+    --accent-color: #0047ab;
+    --border-color: #ddd;
+    --light-accent: #e6f0ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-info p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Add line after the header text */
+h2:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--border-color);
+    margin-left: 15px;
+}
+
+.section-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-left: -35px; /* Move whole to the left */
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h3 a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+h3 a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.institution {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.publication a {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.publication a:hover {
+    text-decoration: underline;
+}
+
+.details {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+}
+
+li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skill-category {
+    background-color: var(--light-accent);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.skill-category h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.skill-category p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Publications */
+.publication {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Languages */
+.language {
+    display: flex;
+    gap: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .entry-title {
+        flex-direction: column;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .language {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+        font-size: 12pt;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .skills-grid {
+        page-break-inside: avoid;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}

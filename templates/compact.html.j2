@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ meta.compact_title }}</title>
+    <link rel="stylesheet" href="compact_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <h1>{{ person.name }}</h1>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+                    <p><i class="fas fa-phone"></i> {{ person.phone }}</p>
+                    <p><i class="fas fa-map-marker-alt"></i> {{ person.location }}</p>
+                    <p><i class="fab fa-github"></i> <a href="{{ person.github.url }}" target="_blank" rel="noreferrer noopener">{{ person.github.label }}</a></p>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <section id="education">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.education }}
+                    </h2>
+                    {% for entry in education %}
+                    <div class="entry">
+                        <h3><span>{{ entry.title }}</span></h3>
+                        <p class="institution">{{ entry.institution }}<span class="date">{{ entry.date }}</span></p>
+                        {% if entry.details is defined %}
+                        <p class="details">{{ entry.details }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <section id="work-experience">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.experience }}
+                    </h2>
+                    {% for entry in experience %}
+                    <div class="entry">
+                        <h3><span>{{ entry.title }}</span></h3>
+                        <p class="institution">{{ entry.institution }} <span class="date">{{ entry.date }}</span></p>
+                        <ul>
+                            {% for bullet in entry.bullets %}
+                            <li>{{ bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <section id="projects">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.projects }}
+                    </h2>
+                    {% for entry in projects %}
+                    <div class="entry-compact">
+                        <h3><span><a href="{{ entry.url }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a></span></h3>
+                        <ul>
+                            {% for bullet in entry.bullets %}
+                            <li>{{ bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section id="research-interests">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.interests }}
+                    </h2>
+                    <div class="tags">
+                        {% for tag in interests %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <section id="publications">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.publications }}
+                    </h2>
+                    {% for entry in publications %}
+                    <div class="entry-compact">
+                        <div class="publication">
+                            <div class="publication-title"><a href="{{ entry.url }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a></div>
+                            <div class="publication-authors">{{ entry.authors }}</div>
+                            <div class="publication-venue">{{ entry.venue }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <section id="technical-skills">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.skills }}
+                    </h2>
+                    {% for skill in skills %}
+                    <div class="skill-category">
+                        <h3>{{ skill.title }}</h3>
+                        <p>{{ skill.list }}</p>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <section id="languages">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.languages }}
+                    </h2>
+                    {% for language in languages %}
+                    <p><strong>{{ language.label }} :</strong> {{ language.value }}</p>
+                    {% endfor %}
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

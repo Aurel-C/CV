@@ -1,0 +1,103 @@
+person:
+  name: Aurélien Cécille
+  email: cecille.aurelien@liris.cnrs.fr
+  phone: "+33 6 09 22 03 96"
+  location: 7 rue des Jardins, 69600 Oullins, France
+  github:
+    label: Aurel-C
+    url: https://github.com/aurel-c
+
+meta:
+  title: Aurélien Cécille - CV
+  compact_title: Aurélien Cécille - CV compact
+
+sections:
+  education: Formation
+  experience: Expérience professionnelle
+  projects: Projets
+  interests: Centres d’intérêt
+  publications: Publications
+  skills: Compétences
+  languages: Langues
+
+labels:
+  current: aujourd'hui
+  thesis: Thèse
+  publication_venue: Publication
+
+education:
+  - title: Doctorant en informatique
+    institution: LIRIS & Visual Behavior
+    date: mai 2023 - aujourd'hui
+    details: "Thèse : « Profondeur monoculaire : apprentissage auto-supervisé intégrant la structure de la scène »"
+  - title: Ingénieur en informatique
+    institution: Université de Technologie de Troyes
+    date: 2017 - 2022
+
+experience:
+  - title: Ingénieur de Recherche
+    institution: Visual Behavior
+    date: oct. 2022 - mai 2023
+    bullets:
+      - Recherche, entraînement et évaluation de modèles de deep learning pour la vision des véhicules robotisés et intelligents
+  - title: Stagiaire ingénieur IA
+    institution: Orange
+    date: févr. 2022 - juil. 2022
+    bullets:
+      - Détection et segmentation de câbles à fibre optique dans des images
+      - Méthodes d’apprentissage few-shot basées sur le méta-apprentissage
+      - Exploitation de représentations latentes issues de modèles génératifs (GAN)
+  - title: Stagiaire ingénieur IA
+    institution: Visual Behavior
+    date: sept. 2020 - févr. 2021
+    bullets:
+      - Apprentissage auto-supervisé pour l’estimation de profondeur, du flux optique et de l’egomotion
+      - Reconstruction de l’environnement à partir d’une vue aérienne
+
+projects:
+  - title: Génération conditionnelle de logos
+    url: https://github.com/Aurel-C/Conditional-Logo-Generation-with-StyleGAN2
+    bullets:
+      - Génération de logos avec StyleGAN2
+      - Conditionnement du générateur à partir du clustering de l’espace latent d’un VAE
+      - Interface Flask avec contrôle de la couleur, de la forme et de la catégorie
+  - title: Agent d’apprentissage par renforcement
+    url: https://github.com/Aurel-C/Gridworld-rl
+    bullets:
+      - Environnement de grille personnalisé sous Unity ML-Agents relié à OpenAI Gym
+      - Implémentation en JAX pour la parallélisation et la recherche optimisée d’hyperparamètres
+
+interests:
+  - Vision par ordinateur
+  - Apprentissage profond
+  - Apprentissage auto-supervisé
+
+publications:
+  - title: Towards Sharper Object Boundaries in Self-Supervised Depth Estimation
+    url: https://arxiv.org/abs/2509.15987
+    authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Rémi Agier & Thibault Neveu
+    venue: BMVC oral, 27 novembre 2025, Sheffield, Royaume-Uni
+  - title: "GroCo: Ground Constraint for Metric Self-Supervised Monocular Depth"
+    url: https://arxiv.org/abs/2409.14850
+    authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Thibault Neveu & Rémi Agier
+    venue: ECCV 2024, octobre 2024, Milan, Italie
+
+skills:
+  - title: Apprentissage profond
+    list: PyTorch, JAX, TensorFlow
+  - title: Apprentissage automatique
+    list: Scikit-learn, Pandas
+  - title: Visualisation de données
+    list: D3.js, Python, R, Tableau, Power BI
+  - title: Applications web
+    list: Flask, React, Vue.js
+  - title: Langages de programmation
+    list: Python, Java, C
+  - title: Outils et bases de données
+    list: Docker, SQL, NoSQL
+
+languages:
+  - label: Anglais
+    value: Courant (niveau C2)
+  - label: Français
+    value: Langue maternelle

@@ -1,0 +1,103 @@
+person:
+  name: Aurélien Cécille
+  email: cecille.aurelien@liris.cnrs.fr
+  phone: "+33 6 09 22 03 96"
+  location: 7 rue des Jardins, 69600 Oullins, France
+  github:
+    label: Aurel-C
+    url: https://github.com/aurel-c
+
+meta:
+  title: Aurélien Cécille - CV
+  compact_title: Aurélien Cécille - CV compact
+
+sections:
+  education: Education
+  experience: Work Experience
+  projects: Projects
+  interests: Research Interests
+  publications: Publications
+  skills: Technical Skills
+  languages: Languages
+
+labels:
+  current: Present
+  thesis: Thesis
+  publication_venue: Publication
+
+education:
+  - title: Ph.D. Candidate in Computer Science
+    institution: LIRIS & Visual Behavior
+    date: May 2023 - Present
+    details: "Thesis: 'Monocular depth: self-supervised learning integrating scene structure'"
+  - title: Master's Degree in Computer Science
+    institution: University of Technology of Troyes
+    date: 2017 - 2022
+
+experience:
+  - title: Research Engineer
+    institution: Visual Behavior
+    date: Oct. 2022 - May 2023
+    bullets:
+      - Research, training, and evaluation of deep learning models for robotic and intelligent vehicle vision
+  - title: AI Engineer Intern
+    institution: Orange
+    date: Feb. 2022 - Jul. 2022
+    bullets:
+      - Detection and segmentation of fiber optic cables in images
+      - Few-shot learning methods based on meta-learning
+      - Leveraging latent representations from generative models (GANs)
+  - title: AI Engineer Intern
+    institution: Visual Behavior
+    date: Sept. 2020 - Feb. 2021
+    bullets:
+      - Self-supervised learning for depth estimation, optical flow, and egomotion estimation
+      - Environment reconstruction from bird's-eye view
+
+projects:
+  - title: Conditional Logo Generation
+    url: https://github.com/Aurel-C/Conditional-Logo-Generation-with-StyleGAN2
+    bullets:
+      - Logo generation using StyleGAN2
+      - Conditioning the generator with latent-space clustering from a VAE
+      - Flask interface with color, shape, and category controls
+  - title: Reinforcement Learning Agent
+    url: https://github.com/Aurel-C/Gridworld-rl
+    bullets:
+      - Custom grid-world environment in Unity ML-Agents linked with OpenAI Gym
+      - Implementation in JAX for parallelization and optimized hyperparameter search
+
+interests:
+  - Computer Vision
+  - Deep Learning
+  - Self-Supervised Learning
+
+publications:
+  - title: Towards Sharper Object Boundaries in Self-Supervised Depth Estimation
+    url: https://arxiv.org/abs/2509.15987
+    authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Rémi Agier & Thibault Neveu
+    venue: BMVC oral, November 27, 2025, Sheffield, United Kingdom
+  - title: "GroCo: Ground Constraint for Metric Self-Supervised Monocular Depth"
+    url: https://arxiv.org/abs/2409.14850
+    authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Thibault Neveu & Rémi Agier
+    venue: ECCV 2024, October 2024, Milan, Italy
+
+skills:
+  - title: Deep Learning
+    list: PyTorch, JAX, TensorFlow
+  - title: Machine Learning
+    list: Scikit-learn, Pandas
+  - title: Data Visualization
+    list: D3.js, Python, R, Tableau, Power BI
+  - title: Web Applications
+    list: Flask, React, Vue.js
+  - title: Programming Languages
+    list: Python, Java, C
+  - title: Tools & Databases
+    list: Docker, SQL, NoSQL
+
+languages:
+  - label: English
+    value: Fluent (C2 level)
+  - label: French
+    value: Native language
