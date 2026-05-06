@@ -18,9 +18,14 @@
                     <p><i class="fas fa-envelope"></i> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
                     <p><i class="fas fa-phone"></i> {{ person.phone }}</p>
                     <p><i class="fas fa-map-marker-alt"></i> {{ person.location }}</p>
-                    <p><i class="fab fa-github"></i> <a href="{{ person.github.url }}" target="_blank" rel="noreferrer noopener">{{ person.github.label }}</a></p>
+                    <p>
+                        <a class="github-link" href="{{ person.github.url }}" target="_blank" rel="noreferrer noopener" aria-label="{{ person.github.aria_label }}" title="{{ person.github.aria_label }}">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </p>
                 </div>
             </div>
+            <div class="profile-photo" aria-hidden="true"></div>
         </header>
 
         <div class="main-content">

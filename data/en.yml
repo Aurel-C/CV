@@ -1,10 +1,11 @@
 person:
   name: Aurélien Cécille
-  email: cecille.aurelien@liris.cnrs.fr
+  email: cecille.aurelien@gmail.com
   phone: "+33 6 09 22 03 96"
   location: 7 rue des Jardins, 69600 Oullins, France
   github:
     label: Aurel-C
+    aria_label: GitHub profile
     url: https://github.com/aurel-c
 
 meta:

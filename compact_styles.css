@@ -66,11 +66,23 @@ body {
 
 /* Header with special styling for section headers */
 header {
-    margin-bottom: 15pt;
-    border-bottom: 1px solid var(--primary-color);
-    padding-bottom: 10pt;
+    margin-bottom: 12pt;
+    padding-right: 25mm;
     position: relative;
     z-index: 1;
+}
+.profile{
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 12pt;
+}
+
+.profile-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22mm;
+    height: 22mm;
+    background-color: var(--primary-color);
 }
 
 h1 {
@@ -81,26 +93,36 @@ h1 {
 
 .contact-info {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10pt;
+    justify-content: space-evenly;
 }
 
 .contact-info p {
     margin: 0;
     display: flex;
     align-items: center;
-    font-size: 9pt;
+    font-size: 8.5pt;
 }
 
 .contact-info i {
     color: var(--primary-color);
-    margin-right: 5pt;
+    margin-right: 2pt;
     font-size: 10pt;
 }
 
 .contact-info a {
     color: var(--primary-color);
     text-decoration: none;
+}
+
+.contact-info a.github-link {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.contact-info a.github-link i {
+    margin-right: 0;
+    font-size: 10pt;
 }
 
 /* Two-column layout */
@@ -444,10 +466,6 @@ html[lang="fr"] .right-column #technical-skills .skills-grid {
 
     header {
         padding-bottom: 0;
-    }
-
-    .contact-info {
-        gap: 4pt;
     }
 
     .contact-info p {
