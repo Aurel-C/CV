@@ -26,13 +26,12 @@ labels:
   thesis: Thesis
   publication_venue: Publication
 
-hidden_sections:
-  - skills
+hidden_sections: []
 
 education:
   - title: Ph.D. Candidate in Computer Science
     institution: LIRIS & Visual Behavior
-    date: May 2023 - Present
+    date: May 2023 - June 2026
     details: "Structure Aware Self-Supervised Monocular Depth Estimation"
   - title: Master's Degree in Computer Science
     institution: University of Technology of Troyes
@@ -41,9 +40,12 @@ education:
 experience:
   - title: Research Engineer
     institution: Visual Behavior
-    date: Oct. 2022 - May 2023
+    date: Oct. 2022 - Oct. 2025
     bullets:
-      - Research, training, and evaluation of deep learning models for robotic and intelligent vehicle vision
+      - Developed computer vision modules for intelligent vehicles and mobile robotics
+      - Estimated lead-vehicle distance and detected traffic lights for energy-aware driving applications
+      - Built local occupancy maps to improve robot environment awareness
+      - Contributed to ADAS perception for free-space detection around trucks and buses and vulnerable road user detection
   - title: AI Engineer Intern
     institution: Orange
     date: Feb. 2022 - Jul. 2022
@@ -75,6 +77,7 @@ interests:
   - Computer Vision
   - Deep Learning
   - Self-Supervised Learning
+  - Robotics
 
 conferences:
   - title: ICVSS 2025
@@ -93,25 +96,15 @@ publications:
   - title: Towards Sharper Object Boundaries in Self-Supervised Depth Estimation
     url: https://arxiv.org/abs/2509.15987
     authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Rémi Agier & Thibault Neveu
-    venue: BMVC oral, November 27, 2025, Sheffield, United Kingdom
+    venue: BMVC Oral, November 27, 2025, Sheffield, United Kingdom
   - title: "GroCo: Ground Constraint for Metric Self-Supervised Monocular Depth"
     url: https://arxiv.org/abs/2409.14850
     authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Thibault Neveu & Rémi Agier
     venue: ECCV 2024, October 2024, Milan, Italy
 
 skills:
-  - title: Deep Learning
-    list: PyTorch, JAX, TensorFlow
-  - title: Machine Learning
-    list: Scikit-learn, Pandas
-  - title: Data Visualization
-    list: D3.js, Python, R, Tableau, Power BI
-  - title: Web Applications
-    list: Flask, React, Vue.js
-  - title: Programming Languages
-    list: Python, Java, C
-  - title: Tools & Databases
-    list: Docker, SQL, NoSQL
+  - title: Core tools
+    list: PyTorch, JAX, Python, Docker
 
 languages:
   - label: English

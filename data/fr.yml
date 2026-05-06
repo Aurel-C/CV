@@ -26,13 +26,12 @@ labels:
   thesis: Thèse
   publication_venue: Publication
 
-hidden_sections:
-  - skills
+hidden_sections: []
 
 education:
   - title: Doctorant en informatique
     institution: LIRIS & Visual Behavior
-    date: mai 2023 - aujourd'hui
+    date: mai 2023 - juin 2026
     details: "Thèse : « Profondeur monoculaire : apprentissage auto-supervisé intégrant la structure de la scène »"
   - title: Ingénieur en informatique
     institution: Université de Technologie de Troyes
@@ -41,9 +40,12 @@ education:
 experience:
   - title: Ingénieur de Recherche
     institution: Visual Behavior
-    date: oct. 2022 - mai 2023
+    date: oct. 2022 - oct. 2025
     bullets:
-      - Recherche, entraînement et évaluation de modèles de deep learning pour la vision des véhicules robotisés et intelligents
+      - Développement de modules de vision par ordinateur pour véhicules intelligents et robotique mobile
+      - Estimation de la distance au véhicule précédent et détection de feux de signalisation pour des applications de conduite éco-énergétique
+      - Construction de cartes d'occupation locales pour améliorer la perception de l'environnement par le robot
+      - Contribution à la perception ADAS pour la détection d'espaces libres autour de camions et bus, ainsi que de personnes vulnérables
   - title: Stagiaire ingénieur IA
     institution: Orange
     date: févr. 2022 - juil. 2022
@@ -73,6 +75,7 @@ projects:
 
 interests:
   - Vision par ordinateur
+  - Robotique
   - Apprentissage profond
   - Apprentissage auto-supervisé
 
@@ -93,25 +96,15 @@ publications:
   - title: Towards Sharper Object Boundaries in Self-Supervised Depth Estimation
     url: https://arxiv.org/abs/2509.15987
     authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Rémi Agier & Thibault Neveu
-    venue: BMVC oral, 27 novembre 2025, Sheffield, Royaume-Uni
+    venue: BMVC Oral, 27 novembre 2025, Sheffield, Royaume-Uni
   - title: "GroCo: Ground Constraint for Metric Self-Supervised Monocular Depth"
     url: https://arxiv.org/abs/2409.14850
     authors: Aurélien Cécille, Stefan Duffner, Franck Davoine, Thibault Neveu & Rémi Agier
     venue: ECCV 2024, octobre 2024, Milan, Italie
 
 skills:
-  - title: Apprentissage profond
-    list: PyTorch, JAX, TensorFlow
-  - title: Apprentissage automatique
-    list: Scikit-learn, Pandas
-  - title: Visualisation de données
-    list: D3.js, Python, R, Tableau, Power BI
-  - title: Applications web
-    list: Flask, React, Vue.js
-  - title: Langages de programmation
-    list: Python, Java, C
-  - title: Outils et bases de données
-    list: Docker, SQL, NoSQL
+  - title: Outils principaux
+    list: PyTorch, JAX, Python, Docker
 
 languages:
   - label: Anglais

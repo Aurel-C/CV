@@ -127,22 +127,12 @@ h1 {
 
 /* Sections - adding more space now that we removed Additional Information */
 section {
-    margin-bottom: 15pt;
+    margin-bottom: 12pt;
 }
 
-/* Distribute space more efficiently across sections */
-#education, #work-experience {
-    margin-bottom: 18pt; /* Slightly more space */
-}
-
-#projects {
-    margin-bottom: 0; /* Last section in left column */
-    flex-grow: 1; /* Allow to grow to fill space */
-}
-
+#projects,
 #languages {
-    margin-bottom: 0; /* Last section in right column */
-    flex-grow: 1; /* Allow to grow to fill space */
+    flex-grow: 1;
 }
 
 /* Enhanced section header styling */
@@ -342,8 +332,18 @@ li::before {
 }
 
 /* Skills */
+#technical-skills {
+    margin-bottom: 12pt;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4pt 10pt;
+}
+
 .skill-category {
-    margin-bottom: 8pt;
+    margin-bottom: 0;
 }
 
 .skill-category:last-child {
@@ -351,7 +351,7 @@ li::before {
 }
 
 .skill-category h3 {
-    font-size: 10pt;
+    font-size: 9pt;
     margin-bottom: 2pt;
     color: var(--primary-color);
     display: block; /* Keep as block for skill headers */
@@ -363,8 +363,25 @@ li::before {
 }
 
 .skill-category p {
-    font-size: 9pt;
-    line-height: 1.3;
+    font-size: 8.5pt;
+    line-height: 1.2;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3pt;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 1pt 5pt;
+    border-radius: 999px;
+    background-color: var(--light-accent);
+    color: var(--primary-color);
+    font-size: 8pt;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
 /* Languages section - add a bit more space now */
@@ -375,6 +392,42 @@ li::before {
 
 #languages p:last-child {
     margin-bottom: 0;
+}
+
+html[lang="fr"] .left-column h3 {
+    font-size: 10pt;
+}
+
+html[lang="fr"] .left-column .institution {
+    font-size: 9pt;
+}
+
+html[lang="fr"] .left-column .details {
+    font-size: 8pt;
+    margin-bottom: 3pt;
+}
+
+html[lang="fr"] .left-column li {
+    font-size: 8pt;
+    margin-bottom: 1pt;
+}
+
+html[lang="fr"] .left-column .entry {
+    margin-bottom: 7pt;
+}
+
+html[lang="fr"] .right-column #technical-skills h3,
+html[lang="fr"] .right-column #technical-skills p {
+    font-size: 8.5pt;
+    margin-bottom: 1pt;
+}
+
+html[lang="fr"] .right-column #technical-skills .skill-category {
+    margin-bottom: 0;
+}
+
+html[lang="fr"] .right-column #technical-skills .skills-grid {
+    gap: 3pt 8pt;
 }
 
 /* Print settings */

@@ -126,6 +126,31 @@
                     </div>
                 </section>
 
+                <section id="publications">
+                    <h2>
+                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
+                            <g transform="translate(-92.958307,-152.68222)">
+                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
+                                    <g transform="translate(14.733938,75.806834)">
+                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
+                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        {{ sections.publications }}
+                    </h2>
+                    {% for entry in publications %}
+                    <div class="entry-compact">
+                        <div class="publication">
+                            <div class="publication-title"><a href="{{ entry.url }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a></div>
+                            <div class="publication-authors">{{ entry.authors }}</div>
+                            <div class="publication-venue">{{ entry.venue }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
+
                 <section id="conferences">
                     <h2>
                         <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
@@ -154,32 +179,6 @@
                     {% endfor %}
                 </section>
 
-                <section id="publications">
-                    <h2>
-                        <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
-                            <g transform="translate(-92.958307,-152.68222)">
-                                <g transform="matrix(0.26458333,0,0,0.26458333,89.059949,132.625)">
-                                    <g transform="translate(14.733938,75.806834)">
-                                        <path style="fill:#0047ab" transform="rotate(180,20,100)"
-                                            d="M 0,120 V 80 l 40,40 z m 40,80 h -80 v -80 h 80 z m -80,0 -40,-40 40,-40 z" />
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        {{ sections.publications }}
-                    </h2>
-                    {% for entry in publications %}
-                    <div class="entry-compact">
-                        <div class="publication">
-                            <div class="publication-title"><a href="{{ entry.url }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a></div>
-                            <div class="publication-authors">{{ entry.authors }}</div>
-                            <div class="publication-venue">{{ entry.venue }}</div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </section>
-
-                {% if 'skills' not in hidden_sections %}
                 <section id="technical-skills">
                     <h2>
                         <svg class="section-icon" width="18" height="18" viewBox="0 0 31.749998 31.750002">
@@ -197,11 +196,14 @@
                     {% for skill in skills %}
                     <div class="skill-category">
                         <h3>{{ skill.title }}</h3>
-                        <p>{{ skill.list }}</p>
+                        <div class="skill-tags">
+                            {% for item in skill.list.split(', ') %}
+                            <span class="skill-tag">{{ item }}</span>
+                            {% endfor %}
+                        </div>
                     </div>
                     {% endfor %}
                 </section>
-                {% endif %}
 
                 <section id="languages">
                     <h2>
