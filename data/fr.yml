@@ -2,7 +2,7 @@ person:
   name: Aurélien Cécille
   email: cecille.aurelien@gmail.com
   phone: "+33 6 09 22 03 96"
-  location: 7 rue des Jardins, 69600 Oullins, France
+  location: Lyon, France
   github:
     label: Aurel-C
     aria_label: Profil GitHub
@@ -33,6 +33,7 @@ education:
   - title: Doctorant en informatique
     institution: LIRIS & Visual Behavior
     date: mai 2023 - juin 2026
+    url: https://liris.cnrs.fr/page-membre/aurelien-cecille
     details: "Thèse : « Profondeur monoculaire : apprentissage auto-supervisé intégrant la structure de la scène »"
   - title: Ingénieur en informatique
     institution: Université de Technologie de Troyes
@@ -44,16 +45,16 @@ experience:
     date: oct. 2022 - oct. 2025
     bullets:
       - Développement de modules de vision par ordinateur pour véhicules intelligents et robotique mobile
-      - Estimation de la distance au véhicule précédent et détection de feux de signalisation pour des applications de conduite éco-énergétique
-      - Construction de cartes d'occupation locales pour améliorer la perception de l'environnement par le robot
-      - Contribution à la perception ADAS pour la détection d'espaces libres autour de camions et bus, ainsi que de personnes vulnérables
+      - Estimation de la distance au véhicule précédent et des feux de signalisation pour des applications d'éco-conduite
+      - Construction de cartes d'occupation locales pour faciliter la navigation sûre autour d'obstacles et de personnes
+      - Contribution à un système ADAS en production, avec travaux sur la détection d'espaces libres et de personnes vulnérables
   - title: Stagiaire ingénieur IA
     institution: Orange
     date: févr. 2022 - juil. 2022
     bullets:
-      - Détection et segmentation de câbles à fibre optique dans des images
-      - Méthodes d’apprentissage few-shot basées sur le méta-apprentissage
-      - Exploitation de représentations latentes issues de modèles génératifs (GAN)
+      - Détection et segmentation de câbles à fibre optique pour évaluer la qualité d'armoires de réseau
+      - Évaluation de méthodes d’apprentissage few-shot basées sur le méta-apprentissage
+      - Exploitation de représentations latentes de modèles génératifs (GAN) pour améliorer les prédictions avec peu d'annotations
   - title: Stagiaire ingénieur IA
     institution: Visual Behavior
     date: sept. 2020 - févr. 2021
@@ -105,7 +106,7 @@ publications:
 
 skills:
   - title: Outils principaux
-    list: PyTorch, JAX, Python, Docker
+    list: PyTorch, JAX, Python, OpenCV, Docker, Linux, Git, OpenGL, WebGPU, D3.js
 
 languages:
   - label: Anglais

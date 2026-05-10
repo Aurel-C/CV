@@ -2,7 +2,7 @@ person:
   name: Aurélien Cécille
   email: cecille.aurelien@gmail.com
   phone: "+33 6 09 22 03 96"
-  location: 7 rue des Jardins, 69600 Oullins, France
+  location: Lyon, France
   github:
     label: Aurel-C
     aria_label: GitHub profile
@@ -33,6 +33,7 @@ education:
   - title: Ph.D. Candidate in Computer Science
     institution: LIRIS & Visual Behavior
     date: May 2023 - June 2026
+    url: https://liris.cnrs.fr/en/member-page/aurelien-cecille
     details: "Structure Aware Self-Supervised Monocular Depth Estimation"
   - title: Master's Degree in Computer Science
     institution: University of Technology of Troyes
@@ -45,15 +46,15 @@ experience:
     bullets:
       - Developed computer vision modules for intelligent vehicles and mobile robotics
       - Estimated lead-vehicle distance and detected traffic lights for energy-aware driving applications
-      - Built local occupancy maps to improve robot environment awareness
-      - Contributed to ADAS perception for free-space detection around trucks and buses and vulnerable road user detection
+      - Built local occupancy maps to support safe navigation around obstacles and people
+      - Contributed to a production ADAS system, with work on free-space and vulnerable road user detection
   - title: AI Engineer Intern
     institution: Orange
     date: Feb. 2022 - Jul. 2022
     bullets:
-      - Detection and segmentation of fiber optic cables in images
-      - Few-shot learning methods based on meta-learning
-      - Leveraging latent representations from generative models (GANs)
+      - Detected and segmented fiber optic cables to evaluate the quality of network closets
+      - Evaluated few-shot learning methods based on meta-learning
+      - Leveraged latent representations from generative models (GANs) to improve predictions in low-annotation settings
   - title: AI Engineer Intern
     institution: Visual Behavior
     date: Sept. 2020 - Feb. 2021
@@ -66,7 +67,7 @@ projects:
     url: https://github.com/Aurel-C/Conditional-Logo-Generation-with-StyleGAN2
     bullets:
       - Logo generation using StyleGAN2
-      - Conditioning the generator with latent-space clustering from a VAE
+      - Conditioning with latent-space clustering from a VAE
       - Flask interface with color, shape, and category controls
   - title: Reinforcement Learning Agent
     url: https://github.com/Aurel-C/Gridworld-rl
@@ -105,7 +106,7 @@ publications:
 
 skills:
   - title: Core tools
-    list: PyTorch, JAX, Python, Docker
+    list: PyTorch, JAX, Python, OpenCV, Docker, Linux, Git, OpenGL, WebGPU, D3.js
 
 languages:
   - label: English

@@ -21,11 +21,12 @@
                     <p>
                         <a class="github-link" href="{{ person.github.url }}" target="_blank" rel="noreferrer noopener" aria-label="{{ person.github.aria_label }}" title="{{ person.github.aria_label }}">
                             <i class="fab fa-github"></i>
+                            <span>{{ person.github.label }}</span>
                         </a>
                     </p>
                 </div>
             </div>
-            <div class="profile-photo" aria-hidden="true"></div>
+            <img class="profile-photo" src="pic4.jpg" alt="Photo de profil de {{ person.name }}">
         </header>
 
         <div class="main-content">
@@ -46,7 +47,7 @@
                     </h2>
                     {% for entry in education %}
                     <div class="entry">
-                        <h3><span>{{ entry.title }}</span></h3>
+                        <h3><span>{% if entry.url is defined %}<a href="{{ entry.url }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}</span></h3>
                         <p class="institution">{{ entry.institution }}<span class="date">{{ entry.date }}</span></p>
                         {% if entry.details is defined %}
                         <p class="details">{{ entry.details }}</p>

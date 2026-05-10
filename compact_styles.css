@@ -77,16 +77,18 @@ header {
 }
 
 .profile-photo {
+    border-radius: 10%;
     position: absolute;
     top: 0;
     right: 0;
     width: 22mm;
     height: 22mm;
+    object-fit: cover;
     background-color: var(--primary-color);
 }
 
 h1 {
-    color: var(--primary-color);
+    color: #222;
     font-size: 24pt;
     margin-bottom: 5pt;
 }
@@ -101,6 +103,7 @@ h1 {
     display: flex;
     align-items: center;
     font-size: 8.5pt;
+    white-space: nowrap;
 }
 
 .contact-info i {
@@ -118,6 +121,8 @@ h1 {
     display: inline-flex;
     align-items: center;
     line-height: 1;
+    gap: 2pt;
+    white-space: nowrap;
 }
 
 .contact-info a.github-link i {
@@ -409,7 +414,6 @@ li::before {
 /* Languages section - add a bit more space now */
 #languages p {
     font-size: 9pt;
-    margin-bottom: 3pt; /* Slightly more space between language entries */
 }
 
 #languages p:last-child {
@@ -425,12 +429,12 @@ html[lang="fr"] .left-column .institution {
 }
 
 html[lang="fr"] .left-column .details {
-    font-size: 8pt;
+    font-size: 9pt;
     margin-bottom: 3pt;
 }
 
 html[lang="fr"] .left-column li {
-    font-size: 8pt;
+    font-size: 9pt;
     margin-bottom: 1pt;
 }
 
@@ -440,7 +444,7 @@ html[lang="fr"] .left-column .entry {
 
 html[lang="fr"] .right-column #technical-skills h3,
 html[lang="fr"] .right-column #technical-skills p {
-    font-size: 8.5pt;
+    font-size: 9pt;
     margin-bottom: 1pt;
 }
 
