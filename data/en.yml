@@ -1,5 +1,5 @@
 person:
-  name: Aurélien Cécille
+  name: Aurélien Cecille
   email: cecille.aurelien@gmail.com
   phone: "+33 6 09 22 03 96"
   location: Lyon, France
@@ -28,6 +28,7 @@ labels:
   publication_venue: Publication
 
 hidden_sections: []
+hide_picture: true
 
 education:
   - title: Ph.D. Candidate in Computer Science

@@ -71,6 +71,11 @@ header {
     position: relative;
     z-index: 1;
 }
+
+header.no-photo {
+    padding-right: 0;
+}
+
 .profile{
     border-bottom: 1px solid var(--primary-color);
     padding-bottom: 12pt;
@@ -425,16 +430,16 @@ html[lang="fr"] .left-column h3 {
 }
 
 html[lang="fr"] .left-column .institution {
-    font-size: 9pt;
+    font-size: 8.5pt;
 }
 
 html[lang="fr"] .left-column .details {
-    font-size: 9pt;
+    font-size: 8.5pt;
     margin-bottom: 3pt;
 }
 
 html[lang="fr"] .left-column li {
-    font-size: 9pt;
+    font-size: 8.5pt;
     margin-bottom: 1pt;
 }
 
@@ -444,7 +449,7 @@ html[lang="fr"] .left-column .entry {
 
 html[lang="fr"] .right-column #technical-skills h3,
 html[lang="fr"] .right-column #technical-skills p {
-    font-size: 9pt;
+    font-size: 8.5pt;
     margin-bottom: 1pt;
 }
 

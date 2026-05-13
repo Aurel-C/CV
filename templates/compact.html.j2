@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <header class="{% if hide_picture %}no-photo{% endif %}">
             <div class="profile">
                 <h1>{{ person.name }}</h1>
                 <div class="contact-info">
@@ -26,7 +26,9 @@
                     </p>
                 </div>
             </div>
+            {% if not hide_picture %}
             <img class="profile-photo" src="pic4.jpg" alt="Photo de profil de {{ person.name }}">
+            {% endif %}
         </header>
 
         <div class="main-content">
